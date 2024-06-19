@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f9f9f9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav.navbar {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    max-height: 56px;
+}   
+
+nav.navbar .menu-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25em;
+}
+
+nav.navbar .menu-logo button.hamburguer {
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+nav.navbar img {
+    width: 5.625em;
+}
+
+nav.navbar .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 404px;
+    height: 40px;
+}
+
+nav.navbar .search-bar form {
+    display: flex;
+    width: 100%; 
+    height: 100%;
+}
+
+nav.navbar .search-bar input.bar-search {
+    border: 1px solid #cccccc;
+    font-size: 1em;
+    padding: 1em;
+    width: 85%;
+}
+
+nav.navbar .search-bar button[type="submit"] {
+    background: #f8f8f8;
+    border: 1px solid #ccc;
+    color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+}
+
+nav.navbar .user-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+nav.navbar .user-options img {
+    border-radius: 100%;
+    width: 34px;
+    height: 34px;
+}
+
+main.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-columns: 5fr;
+    grid-auto-flow: column;
+}
+
+main.content aside.menu {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+main.content aside.menu a.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: #000;
+    font-size: 0.875em;
+    font-weight: 400;
+    text-decoration: none;
+    height: fit-content;
+    width: fit-content;
+}
+
+main.content section.videos-roll {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 0.5em;
+    padding: 0.5em;
+}
+
+main.content a.video-item {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    min-width: 250px;
+}
+
+main.content a.video-item img.thumbnail {
+    display: block;
+    max-width: 100%;
+    min-width: 250px;
+}
+
+main.content a.video-item div.video-description {
+    display: flex;
+    gap: 0.5em;
+    padding: 0.5em;
+}
+
+main.content a.video-item div.video-description img.video-profile {
+    display: block;
+    max-width: 42px;
+    width: 100%;
+}
+
+main.content a.video-item div.video-description h2 {
+    color: #000;
+    font-size: 0.875em;
+    font-weight: 600;
+    padding: 0.3em;
+}
+
+main.content a.video-item div.video-description span {
+    color: #515151;
+    font-size: 0.75em;
+    font-weight: 400;
+}
